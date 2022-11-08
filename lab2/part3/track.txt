@@ -1,0 +1,39 @@
+#######################Part3###########################
+Start time: 10:02:14 on Oct 04,2022
+vlog part3.v 
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module hex_decoder
+-- Compiling module hex
+
+Top level modules:
+	hex
+End time: 10:02:14 on Oct 04,2022, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 10.6d
+
+# vsim -c -do "/cad2/ece241f/public/2/test/run.do" work.part3_tb 
+# Start time: 10:02:15 on Oct 04,2022
+# Loading sv_std.std
+# Loading work.part3_tb
+# Loading work.hex_decoder
+# do /cad2/ece241f/public/2/test/run.do
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# input data =  0, your output = 1000000, expected output = 1000000 PASSED
+# input data =  1, your output = 1111001, expected output = 1111001 PASSED
+# input data =  2, your output = 0100100, expected output = 0100100 PASSED
+# End time: 10:02:15 on Oct 04,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 7
+######################SUMMARY of part3##########################
+Number of Errors by compiling the verilog code: 0
+Number of Errors by running the simulation: 0
+Number of PASSED: 3
+Number of FAILED: 0
+part3 is done!

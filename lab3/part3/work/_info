@@ -1,0 +1,144 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/homes/n/ngresida/ece241/lab3/part3
+vALU
+Z1 !s110 1666704258
+!i10b 1
+!s100 92z=LM[<jKfJ3>d9^@9FO2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IMVWb2X;67bNj7^D2nB:jl3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1666105461
+Z5 8part3.v
+Z6 Fpart3.v
+!i122 0
+L0 25 21
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1666704258.000000
+!s107 part3.v|
+Z9 !s90 -reportprogress|300|part3.v|
+!i113 1
+Z10 tCvgOpt 0
+n@a@l@u
+vfull_adder
+R1
+!i10b 1
+!s100 KkdIa42[S9R?3MdJAO6Z_3
+R2
+I9XfLdn4^gN@79oF3LATkS2
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 73 10
+R7
+r1
+!s85 0
+31
+R8
+Z11 !s107 part3.v|
+R9
+!i113 1
+R10
+vhex_decoder
+R1
+!i10b 1
+!s100 neQGV3D0emk;QnZPY7R[<1
+R2
+IRc8:mNAed[@m^n;?DOcJG3
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 48 12
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vmux2to1
+R1
+!i10b 1
+!s100 8e1QE<XH7Q^h;UlL0[V6o3
+R2
+I84R9[;XmQ1hlZMYCCcaf10
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 84 11
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vpart2
+R1
+!i10b 1
+!s100 :3JJZYZCfm4Ok9JoMj1200
+R2
+I>IaS3:PEk41L7:BlWhe`20
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 62 10
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vpart3
+R1
+!i10b 1
+!s100 N0>g^;?U`RcB_R1TQhz7C3
+R2
+IC<cCnE<AJOh_>Kf`P;cQD1
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 4 19
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
