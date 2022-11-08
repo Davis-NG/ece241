@@ -1,0 +1,33 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/nfs/ug/homes-1/n/ngresida/ece241
+vadd
+!s110 1665870331
+!i10b 1
+!s100 5=<U2bWg02V>?>DUMbZe`3
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+IbE6d?M`a?ecP8M<D>8kU^3
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1665870267
+8test.v
+Ftest.v
+!i122 0
+L0 3 8
+OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1665870331.000000
+!s107 test.v|
+!s90 -reportprogress|300|test.v|
+!i113 1
+tCvgOpt 0

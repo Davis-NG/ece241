@@ -1,0 +1,61 @@
+pwd
+# /nfs/ug/homes-1/n/ngresida/ece241/lab4/part3
+do wave.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:16:58 on Oct 25,2022
+# vlog -reportprogress 300 part3.v 
+# -- Compiling module part3
+# -- Compiling module TopG
+# -- Compiling module sub_circuit
+# -- Compiling module mux2to1
+# -- Compiling module flipFlop
+# 
+# Top level modules:
+# 	TopG
+# End time: 09:16:58 on Oct 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim part3 
+# Start time: 09:16:59 on Oct 25,2022
+# //  ModelSim - Intel FPGA Edition 2020.1 Feb 28 2020 Linux 5.10.0-18-amd64
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim - Intel FPGA Edition and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.part3
+# Loading work.mux2to1
+# Loading work.sub_circuit
+# Loading work.flipFlop
+do wave.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:18:32 on Oct 25,2022
+# vlog -reportprogress 300 part3.v 
+# -- Compiling module part3
+# -- Compiling module TopG
+# -- Compiling module sub_circuit
+# -- Compiling module mux2to1
+# -- Compiling module flipFlop
+# 
+# Top level modules:
+# 	TopG
+# End time: 09:18:32 on Oct 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 09:18:38 on Oct 25,2022, Elapsed time: 0:01:39
+# Errors: 0, Warnings: 0
+# vsim part3 
+# Start time: 09:18:38 on Oct 25,2022
+# Loading work.part3
+# Loading work.mux2to1
+# Loading work.sub_circuit
+# Loading work.flipFlop
+# End time: 09:19:07 on Oct 25,2022, Elapsed time: 0:00:29
+# Errors: 0, Warnings: 0

@@ -1,0 +1,148 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/homes/n/ngresida/ece241/lab4/part3
+vflipFlop
+Z1 !s110 1666703912
+!i10b 1
+!s100 bU=F?=YF7i@^]fQge4okY0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IG1G=KlNS]Q]]gYMVmlN_e1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1666675210
+Z5 8part3.v
+Z6 Fpart3.v
+!i122 21
+L0 53 12
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1666703912.000000
+!s107 part3.v|
+Z9 !s90 -reportprogress|300|part3.v|
+!i113 1
+Z10 tCvgOpt 0
+nflip@flop
+vmux2to1
+R1
+!i10b 1
+!s100 SZ:bCOR?Z>EA506C050nA1
+R2
+Iz=<cOnCPmKGamlz<4MSl=0
+R3
+R0
+R4
+R5
+R6
+!i122 21
+L0 42 10
+R7
+r1
+!s85 0
+31
+R8
+Z11 !s107 part3.v|
+R9
+!i113 1
+R10
+vpart3
+R1
+!i10b 1
+!s100 k32P^f6PkWFGdkW?B9XT<2
+R2
+IS9^<]nb>P1Ni3NJ@F[CKS3
+R3
+R0
+R4
+R5
+R6
+!i122 21
+L0 3 17
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vpart3_tb
+DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1666630812
+!i10b 1
+!s100 15_iNcDYl1aD2_nGcEX@G2
+R2
+Ie^L?j[2GR>E;WOD@nbGbI1
+R3
+S1
+d/nfs/ug/homes-1/n/ngresida/ece241/lab4/part3
+w1666583390
+8/nfs/ug/homes-1/n/ngresida/ece241/lab4/part3/part3_tb.sv
+F/nfs/ug/homes-1/n/ngresida/ece241/lab4/part3/part3_tb.sv
+!i122 7
+L0 4 67
+R7
+r1
+!s85 0
+31
+!s108 1666630812.000000
+!s107 /nfs/ug/homes-1/n/ngresida/ece241/lab4/part3/part3_tb.sv|
+!s90 -reportprogress|300|-work|work|/nfs/ug/homes-1/n/ngresida/ece241/lab4/part3/part3_tb.sv|
+!i113 1
+o-work work
+R10
+vsub_circuit
+R1
+!i10b 1
+!s100 Y4hEm5SKhY3XW1A9X5VA`1
+R2
+I0Wc<9[Ho_=Bm:j=7`A43b2
+R3
+R0
+R4
+R5
+R6
+!i122 21
+L0 31 10
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vTopG
+R1
+!i10b 1
+!s100 ^RXfg?j<LmK^0;TRUXo^?3
+R2
+I9JATiboCdVZ_OF4V@HV<@2
+R3
+R0
+R4
+R5
+R6
+!i122 21
+L0 22 7
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@top@g

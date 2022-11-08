@@ -1,0 +1,72 @@
+#######################Part2###########################
+Start time: 23:56:23 on Oct 24,2022
+vlog part2.v 
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module part2
+-- Compiling module full_adder
+-- Compiling module mux2to1
+-- Compiling module ripple_carry_adder_4bit
+
+Top level modules:
+	ripple_carry_adder_4bit
+End time: 23:56:24 on Oct 24,2022, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 10.6d
+
+# vsim -c -do "/cad2/ece241f/public/3/test/run.do" work.part2_tb 
+# Start time: 23:56:24 on Oct 24,2022
+# Loading sv_std.std
+# Loading work.part2_tb
+# Loading work.part2
+# Loading work.full_adder
+# Loading work.mux2to1
+# do /cad2/ece241f/public/3/test/run.do
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# input a = 0000, input b = 0000, output = 0001, golden_output = 0001, carry_out = 0000, golden_carry_out = 0000, PASSED
+# input a = 0000, input b = 0000, output = 0000, golden_output = 0000, carry_out = 0000, golden_carry_out = 0000, PASSED
+# input a = 0000, input b = 0001, output = 0010, golden_output = 0010, carry_out = 0001, golden_carry_out = 0001, PASSED
+# input a = 0000, input b = 0001, output = 0001, golden_output = 0001, carry_out = 0000, golden_carry_out = 0000, PASSED
+# input a = 0000, input b = 0010, output = 0011, golden_output = 0011, carry_out = 0000, golden_carry_out = 0000, PASSED
+# input a = 0000, input b = 0010, output = 0010, golden_output = 0010, carry_out = 0000, golden_carry_out = 0000, PASSED
+# input a = 0000, input b = 0011, output = 0100, golden_output = 0100, carry_out = 0011, golden_carry_out = 0011, PASSED
+# input a = 0000, input b = 0011, output = 0011, golden_output = 0011, carry_out = 0000, golden_carry_out = 0000, PASSED
+# input a = 0001, input b = 0000, output = 0010, golden_output = 0010, carry_out = 0001, golden_carry_out = 0001, PASSED
+# input a = 0001, input b = 0000, output = 0001, golden_output = 0001, carry_out = 0000, golden_carry_out = 0000, PASSED
+# input a = 0001, input b = 0001, output = 0011, golden_output = 0011, carry_out = 0001, golden_carry_out = 0001, PASSED
+# input a = 0001, input b = 0001, output = 0010, golden_output = 0010, carry_out = 0001, golden_carry_out = 0001, PASSED
+# input a = 0001, input b = 0010, output = 0100, golden_output = 0100, carry_out = 0011, golden_carry_out = 0011, PASSED
+# input a = 0001, input b = 0010, output = 0011, golden_output = 0011, carry_out = 0000, golden_carry_out = 0000, PASSED
+# input a = 0001, input b = 0011, output = 0101, golden_output = 0101, carry_out = 0011, golden_carry_out = 0011, PASSED
+# input a = 0001, input b = 0011, output = 0100, golden_output = 0100, carry_out = 0011, golden_carry_out = 0011, PASSED
+# input a = 0010, input b = 0000, output = 0011, golden_output = 0011, carry_out = 0000, golden_carry_out = 0000, PASSED
+# input a = 0010, input b = 0000, output = 0010, golden_output = 0010, carry_out = 0000, golden_carry_out = 0000, PASSED
+# input a = 0010, input b = 0001, output = 0100, golden_output = 0100, carry_out = 0011, golden_carry_out = 0011, PASSED
+# input a = 0010, input b = 0001, output = 0011, golden_output = 0011, carry_out = 0000, golden_carry_out = 0000, PASSED
+# input a = 0010, input b = 0010, output = 0101, golden_output = 0101, carry_out = 0010, golden_carry_out = 0010, PASSED
+# input a = 0010, input b = 0010, output = 0100, golden_output = 0100, carry_out = 0010, golden_carry_out = 0010, PASSED
+# input a = 0010, input b = 0011, output = 0110, golden_output = 0110, carry_out = 0011, golden_carry_out = 0011, PASSED
+# input a = 0010, input b = 0011, output = 0101, golden_output = 0101, carry_out = 0010, golden_carry_out = 0010, PASSED
+# input a = 0011, input b = 0000, output = 0100, golden_output = 0100, carry_out = 0011, golden_carry_out = 0011, PASSED
+# input a = 0011, input b = 0000, output = 0011, golden_output = 0011, carry_out = 0000, golden_carry_out = 0000, PASSED
+# input a = 0011, input b = 0001, output = 0101, golden_output = 0101, carry_out = 0011, golden_carry_out = 0011, PASSED
+# input a = 0011, input b = 0001, output = 0100, golden_output = 0100, carry_out = 0011, golden_carry_out = 0011, PASSED
+# input a = 0011, input b = 0010, output = 0110, golden_output = 0110, carry_out = 0011, golden_carry_out = 0011, PASSED
+# input a = 0011, input b = 0010, output = 0101, golden_output = 0101, carry_out = 0010, golden_carry_out = 0010, PASSED
+# input a = 0011, input b = 0011, output = 0111, golden_output = 0111, carry_out = 0011, golden_carry_out = 0011, PASSED
+# input a = 0011, input b = 0011, output = 0110, golden_output = 0110, carry_out = 0011, golden_carry_out = 0011, PASSED
+# End time: 23:56:24 on Oct 24,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 7
+######################SUMMARY of part2##########################
+Number of Errors by compiling the verilog code: 0
+Number of Errors by running the simulation: 0
+Number of PASSED: 32
+Number of FAILED: 0
+part2 is done!
