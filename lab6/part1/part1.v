@@ -6,6 +6,15 @@
 //LEDR[3:0] displays current state
 //LEDR[9] displays output
 
+// Top Level module
+module TopG(KEY, SW, LEDR);
+    input [3:0] KEY;
+    input [1:0] SW;
+    output [9:0] LERD;
+
+    part1 u1(.Clock(~KEY[0]), .Resetn(SW[0]), .w(SW[1]), .z(LEDR[9]), .CurState(LERD[3:0]));
+endmodule
+
 module part1(Clock, Resetn, w, z, CurState);
     input Clock;
     input Resetn;
