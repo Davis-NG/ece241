@@ -105,7 +105,7 @@ module control(
                 S_CYCLE_1: next_state = S_CYCLE_2;
                 S_CYCLE_2: next_state = S_CYCLE_3;
                 S_CYCLE_3: next_state = S_CYCLE_4;
-                S_CYCLE_4: next_state = S_LOAD_A; // we will be done our two operations, start over after
+                S_CYCLE_4: next_state = go ? S_LOAD_A : S_CYCLE_4; // we will be done our two operations, start over after
             default:     next_state = S_LOAD_A;
         endcase
     end // state_table
@@ -162,7 +162,7 @@ module control(
                 alu_select_a = 2'b10; // Select register C
                 alu_select_b = 2'b01; // Select register B
                 alu_op = 1'b0; // Do Add operation
-                result_valid = 1'b1;
+                result_valid = 1'b0;
             end
             S_CYCLE_4: begin 
                 result_valid = 1'b1;
