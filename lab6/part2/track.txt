@@ -1,5 +1,5 @@
 #######################Part2###########################
-Start time: 13:46:10 on Nov 10,2022
+Start time: 13:57:53 on Nov 10,2022
 vlog part2.v 
 Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
 -- Compiling module part2
@@ -10,14 +10,14 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 2
 
 Top level modules:
 	TopG
-End time: 13:46:10 on Nov 10,2022, Elapsed time: 0:00:00
+End time: 13:57:53 on Nov 10,2022, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
 Reading pref.tcl
 
 # 10.6d
 
 # vsim -c -do "/cad2/ece241f/public/6/test/run.do" work.part2_tb 
-# Start time: 13:46:11 on Nov 10,2022
+# Start time: 13:57:54 on Nov 10,2022
 # Loading sv_std.std
 # Loading work.part2_tb
 # Loading work.part2
@@ -46,7 +46,7 @@ Reading pref.tcl
 # 	ResultValid asserted at correct time and DataResult held correct value but one or both signals did not correctly maintain it's value
 # ** Note: $finish    : /cad2/ece241f/public/6/test/part2_tb.sv(132)
 #    Time: 59 ns  Iteration: 0  Instance: /part2_tb
-# End time: 13:46:11 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 13:57:54 on Nov 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 7
 ######################SUMMARY of part2##########################
 Number of Errors by compiling the verilog code: 0

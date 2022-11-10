@@ -87,7 +87,8 @@ module control(
                 S_CYCLE_1       = 5'd9,
                 S_CYCLE_2       = 5'd10,
                 S_CYCLE_3       = 5'd11,
-                S_CYCLE_4       = 5'd12;
+                S_CYCLE_4       = 5'd12,
+                S_CYCLE_5       = 5'd13;
 
     // Next state logic aka our state table
     always@(*)
@@ -105,7 +106,8 @@ module control(
                 S_CYCLE_1: next_state = S_CYCLE_2;
                 S_CYCLE_2: next_state = S_CYCLE_3;
                 S_CYCLE_3: next_state = S_CYCLE_4;
-                S_CYCLE_4: next_state = S_LOAD_A; // we will be done our two operations, start over after
+                S_CYCLE_4: next_state = S_CYCLE_5;
+                S_CYCLE_5: next_state = S_LOAD_A; // we will be done our two operations, start over after
             default:     next_state = S_LOAD_A;
         endcase
     end // state_table
@@ -164,6 +166,9 @@ module control(
                 alu_op = 1'b0; // Do Add operation
             end
             S_CYCLE_4: begin 
+                result_valid = 1'b1;
+            end
+            S_CYCLE_5: begin 
                 result_valid = 1'b1;
             end
         // default:    // don't need default since we already made sure all of our outputs were assigned a value at the start of the always block
