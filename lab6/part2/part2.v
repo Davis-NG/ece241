@@ -302,13 +302,13 @@ module TopG(SW, KEY, CLOCK_50, LEDR, HEX0, HEX1);
     );
 
     hex_decoder H0(
-        .hex_digit(data_result[3:0]), 
-        .segments(HEX0)
+        .c(data_result[3:0]), 
+        .display(HEX0)
     );
 
     hex_decoder H1(
-        .hex_digit(data_result[7:4]), 
-        .segments(HEX1)
+        .c(data_result[7:4]), 
+        .display(HEX1)
     );
 
 endmodule
