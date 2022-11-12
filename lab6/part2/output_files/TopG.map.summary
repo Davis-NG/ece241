@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Fri Nov 11 20:36:54 2022
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Standard Edition
+Revision Name : TopG
+Top-level Entity Name : TopG
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 53
+Total pins : 39
+Total virtual pins : 0
+Total block memory bits : 0
+Total DSP Blocks : 1
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0

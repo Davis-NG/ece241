@@ -1,0 +1,10 @@
+
+State Machine - |TopG|part3:u0|control:C0|current_state
+Name current_state.S_DISPLAY current_state.S_CYCLE_4 current_state.S_CYCLE_3 current_state.S_CYCLE_2 current_state.S_CYCLE_1 current_state.S_LOAD_WAIT current_state.S_LOAD 
+current_state.S_LOAD 0 0 0 0 0 0 0 
+current_state.S_LOAD_WAIT 0 0 0 0 0 1 1 
+current_state.S_CYCLE_1 0 0 0 0 1 0 1 
+current_state.S_CYCLE_2 0 0 0 1 0 0 1 
+current_state.S_CYCLE_3 0 0 1 0 0 0 1 
+current_state.S_CYCLE_4 0 1 0 0 0 0 1 
+current_state.S_DISPLAY 1 0 0 0 0 0 1 

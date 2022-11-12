@@ -1,0 +1,4 @@
+Info (10281): Verilog HDL Declaration information at part3.v(138): object "Divisor" differs only in case from object "divisor" in the same scope File: /nfs/ug/homes-1/n/ngresida/ece241/lab6/part3/part3.v Line: 138
+Info (10281): Verilog HDL Declaration information at part3.v(139): object "Dividend" differs only in case from object "dividend" in the same scope File: /nfs/ug/homes-1/n/ngresida/ece241/lab6/part3/part3.v Line: 139
+Info (10281): Verilog HDL Declaration information at part3.v(245): object "Quotient" differs only in case from object "quotient" in the same scope File: /nfs/ug/homes-1/n/ngresida/ece241/lab6/part3/part3.v Line: 245
+Info (10281): Verilog HDL Declaration information at part3.v(246): object "Remainder" differs only in case from object "remainder" in the same scope File: /nfs/ug/homes-1/n/ngresida/ece241/lab6/part3/part3.v Line: 246

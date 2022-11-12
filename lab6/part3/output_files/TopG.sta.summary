@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -21.173
+TNS   : -360.922
+
+Type  : Slow 1100mV 85C Model Setup 'part3:u0|control:C0|current_state.S_DISPLAY'
+Slack : -3.963
+TNS   : -18.171
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.314
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'part3:u0|control:C0|current_state.S_DISPLAY'
+Slack : 2.441
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.394
+TNS   : -14.613
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'part3:u0|control:C0|current_state.S_DISPLAY'
+Slack : 0.294
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -21.276
+TNS   : -357.791
+
+Type  : Slow 1100mV 0C Model Setup 'part3:u0|control:C0|current_state.S_DISPLAY'
+Slack : -4.034
+TNS   : -18.754
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.293
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'part3:u0|control:C0|current_state.S_DISPLAY'
+Slack : 2.576
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.394
+TNS   : -15.876
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'part3:u0|control:C0|current_state.S_DISPLAY'
+Slack : 0.318
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -12.033
+TNS   : -209.088
+
+Type  : Fast 1100mV 85C Model Setup 'part3:u0|control:C0|current_state.S_DISPLAY'
+Slack : -1.969
+TNS   : -8.735
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.188
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'part3:u0|control:C0|current_state.S_DISPLAY'
+Slack : 1.512
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.093
+TNS   : -2.513
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'part3:u0|control:C0|current_state.S_DISPLAY'
+Slack : 0.356
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -10.962
+TNS   : -188.121
+
+Type  : Fast 1100mV 0C Model Setup 'part3:u0|control:C0|current_state.S_DISPLAY'
+Slack : -1.902
+TNS   : -8.585
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.170
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'part3:u0|control:C0|current_state.S_DISPLAY'
+Slack : 1.556
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.090
+TNS   : -2.441
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'part3:u0|control:C0|current_state.S_DISPLAY'
+Slack : 0.374
+TNS   : 0.000
+
+------------------------------------------------------------
