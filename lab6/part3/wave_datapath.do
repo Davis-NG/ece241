@@ -11,7 +11,7 @@ vsim datapath
 #log all signals and add some signals to waveform window
 log {/*}
 # add wave {/*} would add all items in top level simulation module
-do datapath.do
+add wave {/*}
 
 # create clock
 force {clk} 0 0ns, 1 {5ns} -r 10ns

@@ -147,7 +147,7 @@ module datapath(
     reg [4:0] a, divisor;
     reg [3:0] dividend;
 
-    always @(posedge clk) begin    // Uses blocking assignment 
+    always @(posedge clk) begin
         if (!resetn) begin
             a = 5'b0;
             divisor = 5'b0;
@@ -155,9 +155,9 @@ module datapath(
         end
         else begin
             if (ld_value) begin
-                dividend = Dividend;
-                divisor = {1'b0, Divisor};
-                a = 5'b0;
+                dividend <= Dividend;
+                divisor <= {1'b0, Divisor};
+                a <= 5'b0;
             end
             if (shift) begin
                 a = a << 1;
@@ -165,26 +165,30 @@ module datapath(
                 dividend = dividend << 1;
                 a = a - divisor;
 
-                if (a[4] == 1'b1) begin
-                    dividend[0] = 1'b0;
-                    a = a + divisor;
-                end
-                else
-                    dividend[0] = 1'b1;
+            if (test_a[4] == 1'b1) begin
+                test_dividend[0] = 1'b0;
+                test_a = test_a + test_divisor;
             end
+            else
+                test_dividend[0] = 1'b1;
+        end
+        else begin
+            test_a = a;
+            test_divisor = divisor;
+            test_dividend = dividend;
         end
     end
 
     // Output result register
-    always@(posedge clk) begin
+    always @(posedge clk) begin
         if (!resetn) begin
             Quotient <= 4'b0;
             Remainder <= 5'b0;
         end
         else
             if (ld_result) begin
-                Quotient <= dividend[3:0];
-                Remainder <= a[3:0];
+                Quotient <= test_dividend[3:0];
+                Remainder <= test_a[3:0];
             end
     end
 
