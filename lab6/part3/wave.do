@@ -27,7 +27,7 @@ run 1000ns
 # load 7/3
 force Go 1
 force Dividend 3'd7
-force Divisor 4'd3
+force Divisor 3'd3
 run 1000ns
 force Go 0
 run 1000ns
@@ -35,7 +35,7 @@ run 1000ns
 # load 14/10
 force Go 1
 force Dividend 3'd14
-force Divisor 4'd10
+force Divisor 3'd10
 run 1000ns
 force Go 0
 run 1000ns
@@ -43,7 +43,7 @@ run 1000ns
 # load 15/2
 force Go 1
 force Dividend 3'd15
-force Divisor 4'd2
+force Divisor 3'd2
 run 1000ns
 force Go 0
 run 1000ns
@@ -51,7 +51,23 @@ run 1000ns
 # load 10/10
 force Go 1
 force Dividend 3'd10
-force Divisor 4'd10
+force Divisor 3'd10
+run 1000ns
+force Go 0
+run 1000ns
+
+# load 9/0
+force Go 1
+force Dividend 3'd9
+force Divisor 3'd0
+run 1000ns
+force Go 0
+run 1000ns
+
+# load 0/0
+force Go 1
+force Dividend 3'd0
+force Divisor 3'd0
 run 1000ns
 force Go 0
 run 1000ns
