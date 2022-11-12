@@ -147,23 +147,60 @@ module datapath(
     reg [4:0] a, divisor;
     reg [3:0] dividend;
 
+    reg [4:0] test_a, test_divisor;
+    reg [3:0] test_dividend;
+
+    // always @(posedge clk) begin
+    //     if (!resetn) begin
+    //         a <= 5'b0;
+    //         divisor <= 5'b0;
+    //         dividend <= 4'b0;
+    //     end
+    //     else begin
+    //         if (ld_value) begin
+    //             divisor <= {1'b0, Divisor};
+    //             dividend <= Dividend;
+    //             a <= 5'b0;
+    //         end
+    //         if (shift) begin
+    //             a = a << 1;
+    //             a[0] = dividend[3];
+    //             dividend = dividend << 1;
+    //             a = a - divisor;
+
+    //             if (a[4] == 1'b1) begin
+    //                 dividend[0] = 1'b0;
+    //                 a = a + divisor;
+    //             end
+    //             else
+    //                 dividend[0] = 1'b1;
+    //         end
+    //     end
+    // end
+    
     always @(posedge clk) begin
         if (!resetn) begin
-            a = 5'b0;
-            divisor = 5'b0;
-            dividend = 4'b0;
+            a <= 5'b0;
+            divisor <= 5'b0;
+            dividend <= 4'b0;
         end
-        else begin
-            if (ld_value) begin
-                dividend <= Dividend;
-                divisor <= {1'b0, Divisor};
-                a <= 5'b0;
-            end
-            if (shift) begin
-                a = a << 1;
-                a[0] = dividend[3];
-                dividend = dividend << 1;
-                a = a - divisor;
+        if (ld_value) 
+            a <= 5'b0;
+            divisor <= {1'b0, Divisor};
+            dividend <= Dividend;
+        if (shift) begin
+            a <= test_a;
+            divisor <= test_divisor;
+            dividend <= test_dividend;
+        end
+    end
+
+    always @(*) begin
+        if (shift) begin
+            test_a = test_a << 1;
+            test_a[0] = test_dividend[3];
+            test_dividend = test_dividend << 1;
+            test_a = test_a - test_divisor;
 
             if (test_a[4] == 1'b1) begin
                 test_dividend[0] = 1'b0;
