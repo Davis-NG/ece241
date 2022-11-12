@@ -162,7 +162,6 @@ module control(
                 alu_select_a = 2'b10; // Select register C
                 alu_select_b = 2'b01; // Select register B
                 alu_op = 1'b0; // Do Add operation
-                result_valid = 1'b0;
             end
             S_CYCLE_4: begin                  
                 ld_a = 1'b1;

@@ -10,10 +10,10 @@ module part3(Clock, Resetn, Go, Divisor, Dividend, Quotient, Remainder, ResultVa
     input Clock;
     input Resetn;
     input Go;
-    input [4:0] Divisor;
+    input [3:0] Divisor;
     input [3:0] Dividend;
     output [3:0] Quotient;
-    output [4:0] Remainder; 
+    output [3:0] Remainder; 
     output ResultValid;
 
     // lots of wires to connect our datapath and control
@@ -101,16 +101,16 @@ module control(
             S_LOAD: begin
                 ld_value = 1'b1;
                 end
-            S_CYCLE_1: begin // Do A <- A * x
+            S_CYCLE_1: begin 
                 shift = 1'b1;
             end
-            S_CYCLE_2: begin // Do A <- A * x
+            S_CYCLE_2: begin 
                 shift = 1'b1;
             end
-            S_CYCLE_3: begin // Do A <- A * x
+            S_CYCLE_3: begin 
                 shift = 1'b1;
             end
-            S_CYCLE_4: begin // Do A <- A * x
+            S_CYCLE_4: begin
                 shift = 1'b1;
                 ld_result = 1'b1;
             end
@@ -135,12 +135,12 @@ endmodule
 module datapath(
     input clk,
     input resetn,
-    input [4:0] Divisor,
+    input [3:0] Divisor,
     input [3:0] Dividend,
     input ld_value, ld_result,
     input shift,
     output reg [3:0] Quotient,
-    output reg [4:0] Remainder
+    output reg [3:0] Remainder
     );
 
     // input registers
@@ -156,7 +156,7 @@ module datapath(
         else begin
             if (ld_value) begin
                 dividend <= Dividend;
-                divisor <= Divisor;
+                divisor <= {1'b0, Divisor};
                 a <= 5'b0;
             end
             if (shift) begin
@@ -183,8 +183,8 @@ module datapath(
         end
         else
             if (ld_result) begin
-                Quotient <= dividend;
-                Remainder <= a;
+                Quotient <= dividend[3:0];
+                Remainder <= a[3:0];
             end
     end
 
@@ -202,7 +202,7 @@ module TopG(SW, KEY, CLOCK_50, LEDR, HEX0, HEX2, HEX4, HEX5);
     wire go;
 
     wire [3:0] Quotient;
-    wire [4:0] Remainder;
+    wire [3:0] Remainder;
     assign go = ~KEY[1];
     assign resetn = KEY[0];
     assign LEDR[3:0] = Quotient;
@@ -211,9 +211,10 @@ module TopG(SW, KEY, CLOCK_50, LEDR, HEX0, HEX2, HEX4, HEX5);
         .Clock(CLOCK_50),
         .Resetn(resetn),
         .Go(go),
-        .Divisor({1'b0, SW[3:0]}),
+        .Divisor(SW[3:0]),
         .Dividend(SW[7:4]),
         .Quotient(Quotient),
+        .Remainder(Remainder),
         .ResultValid(LEDR[4])
     );
 
@@ -233,7 +234,7 @@ module TopG(SW, KEY, CLOCK_50, LEDR, HEX0, HEX2, HEX4, HEX5);
     );
 
     hex_decoder remainder(
-        .c(Remainder[3:0]), 
+        .c(Remainder), 
         .display(HEX5)
     );
 

@@ -17,8 +17,8 @@ do settings.do
 force {Clock} 0 0ns, 1 {5ns} -r 10ns
 
 # reset circuit (active low)
-force Resetn 0
-run 10ns
+#force Resetn 0
+#run 10ns
 
 force Go 0
 force Resetn 1
