@@ -127,12 +127,12 @@ module control(
                                         next_state = S_DRAW;
                 end
                 
-                S_DRAW_BLACK: begin if (x_count == 8'd127)
+                S_DRAW_BLACK: begin if (x_count == 8'd160)
                                         next_state = S_INCREMENT_BL;
                                     else 
                                         next_state = S_DRAW_BLACK;
                 end 
-                S_INCREMENT_BL: begin if (y_count == 7'd127)
+                S_INCREMENT_BL: begin if (y_count == 7'd120)
                                         next_state = S_DONE;
                                       else
                                         next_state = S_DRAW_BLACK;
@@ -250,9 +250,9 @@ module datapath(
         end
         else
             if (x_count_en)
-                x_count <= x_count + 1;
+                x_count <= x_count + 1'b1;
             else if (y_count_en) begin
-                y_count <= y_count + 1;
+                y_count <= y_count + 1'b1;
                 x_count <= 8'b0;
             end
             else
