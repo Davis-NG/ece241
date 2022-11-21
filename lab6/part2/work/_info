@@ -1,0 +1,111 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/D/Documents/School/ECE241/lab6/part2
+vcontrol
+Z1 !s110 1668968388
+!i10b 1
+!s100 RW?=dL6;h]Xzz<^GMb3Ff0
+IL_344EV0JO>4SD9>gEI[Y1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1668530733
+Z4 8part2.v
+Z5 Fpart2.v
+L0 64
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1668968388.000000
+Z8 !s107 part2.v|
+Z9 !s90 -reportprogress|300|part2.v|
+!i113 1
+Z10 tCvgOpt 0
+vdatapath
+R1
+!i10b 1
+!s100 J^>JX=7:dz]ObCVF6B:Bi2
+IC8mIBkeAb?mz5O2CE`PGD2
+R2
+R0
+R3
+R4
+R5
+L0 184
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vhex_decoder
+R1
+!i10b 1
+!s100 QFWLbW6CKYh?0G:II0:hA2
+In`P?6>oSBbQnF?45I>BFX3
+R2
+R0
+R3
+R4
+R5
+L0 317
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vpart2
+R1
+!i10b 1
+!s100 l<Dm3OJk9?:KmVjUb>[F03
+I8iNWbRoLo5Zh29_VOYlfb3
+R2
+R0
+R3
+R4
+R5
+L0 9
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vTopG
+R1
+!i10b 1
+!s100 `eWLZ@fmEG4>n1IXB2]LZ1
+I:P3alf8ZMMAJO44@^MGR03
+R2
+R0
+R3
+R4
+R5
+L0 280
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@top@g

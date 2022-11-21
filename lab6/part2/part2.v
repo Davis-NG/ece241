@@ -297,7 +297,8 @@ module TopG(SW, KEY, CLOCK_50, LEDR, HEX0, HEX1);
         .Resetn(resetn),
         .Go(go),
         .DataIn(SW[7:0]),
-        .DataResult(data_result)
+        .DataResult(data_result),
+        .ResultValid(LEDR[8])
     );
 
     hex_decoder H0(

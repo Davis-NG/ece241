@@ -64,6 +64,39 @@ run 1000ns
 force Go 0
 run 1000ns
 
+# 2: load 10 into b 
+force DataIn 8'd10
+force Go 1
+run 1000ns
+force Go 0
+run 1000ns
+
+# 3: load 8 into c 
+force DataIn 8'd8
+force Go 1
+run 1000ns
+force Go 0
+run 1000ns
+
+# 4: load 13 into x 
+force DataIn 8'd13
+force Go 1
+run 1000ns
+force Go 0
+run 1000ns
+
+
+
+
+# testing 0*0 + 49 = 49
+
+# 1: load 14 into a
+force DataIn 8'd0
+force Go 1
+run 1000ns
+force Go 0
+run 1000ns
+
 # 2: load 4 into b 
 force DataIn 8'd4
 force Go 1
@@ -72,7 +105,71 @@ force Go 0
 run 1000ns
 
 # 3: load 8 into c 
-force DataIn 8'd8
+force DataIn 8'd49
+force Go 1
+run 1000ns
+force Go 0
+run 1000ns
+
+# 4: load 2 into x 
+force DataIn 8'd2
+force Go 1
+run 1000ns
+force Go 0
+run 1000ns
+
+
+
+# testing 11*11 + 0 = 121
+
+# 1: load 14 into a
+force DataIn 8'd11
+force Go 1
+run 1000ns
+force Go 0
+run 1000ns
+
+# 2: load 200 into b 
+force DataIn 8'd200
+force Go 1
+run 1000ns
+force Go 0
+run 1000ns
+
+# 3: load 8 into c 
+force DataIn 8'd0
+force Go 1
+run 1000ns
+force Go 0
+run 1000ns
+
+# 4: load 4 into x 
+force DataIn 8'd4
+force Go 1
+run 1000ns
+force Go 0
+run 1000ns
+
+
+
+# testing 0*0 + 0 = 0
+
+# 1: load 14 into a
+force DataIn 8'd0
+force Go 1
+run 1000ns
+force Go 0
+run 1000ns
+
+# 2: load 4 into b 
+force DataIn 8'd4
+force Go 1
+run 1000ns
+force Go 0
+run 1000ns
+
+# 3: load 8 into c 
+force DataIn 8'd0
 force Go 1
 run 1000ns
 force Go 0

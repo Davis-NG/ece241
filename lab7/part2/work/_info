@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/D/Documents/School/ece241/lab7/part2
+vcontrol
+Z0 !s110 1668988974
+!i10b 1
+!s100 aT]@kTRCNAbf;VY?_:SUM1
+IXVeEj[j3ccmo]jDQE3[Ck3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/D/Documents/School/ECE241/lab7/part2
+Z3 w1668988971
+Z4 8part2.v
+Z5 Fpart2.v
+L0 77
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1668988974.000000
+Z8 !s107 part2.v|
+Z9 !s90 -reportprogress|300|-work|work|part2.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vdatapath
+R0
+!i10b 1
+!s100 aCZRVjS;aFRVh9X=S9G0;3
+I0zEVdlmQC?>=l@aIM9A_j1
+R1
+R2
+R3
+R4
+R5
+L0 208
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vpart2
+R0
+!i10b 1
+!s100 PmYZ:OF]Q56;aD9ZTCLVS2
+Ih[89NNeHGDG=JgY<AB^Ye3
+R1
+R2
+R3
+R4
+R5
+L0 8
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
