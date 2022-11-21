@@ -99,7 +99,8 @@ module control(
                 S_INCREMENT_Y   = 5'd5,
                 S_DONE          = 5'd6,
                 S_DRAW_BLACK    = 5'd7,
-                S_INCREMENT_BL  = 5'd8;
+                S_INCREMENT_BL  = 5'd8,
+                S_BLACK_WAIT    = 5'd9;
 
     // Next state logic aka our state table
     always@(*)
@@ -108,7 +109,7 @@ module control(
                 S_LOAD_X: begin if (loadx)                     // Loop in current state until value is input or set clear
                                     next_state = S_LOAD_X_WAIT;
                                 else if (black)
-                                    next_state = S_DRAW_BLACK;
+                                    next_state = S_BLACK_WAIT;
                                 else
                                     next_state = S_LOAD_X;
                 end
@@ -145,6 +146,8 @@ module control(
                                 else
                                     next_state = S_DONE;
                 end 
+
+                S_BLACK_WAIT: next_state = black ? S_BLACK_WAIT : S_DRAW_BLACK;
             default:     next_state = S_LOAD_X;
         endcase
     end // state_table
