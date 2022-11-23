@@ -2,7 +2,8 @@ vlib work
 vlog part2.v
 vsim part2
 log -r /*
-do setting.do
+# add wave {/*} would add all items in top level simulation module
+do setting1.do
 
 #create clock
 force {iClock} 0 0ns, 1 {5ns} -r 10ns
@@ -59,4 +60,11 @@ force iColour 3'd101
 force iPlotBox 1'b1
 run 100ns
 force iPlotBox 1'b0
+run 1000ns
+
+# Clear
+force iBlack 1'b1
+run 100ns
+
+force iBlack 1'b0
 run 1000ns

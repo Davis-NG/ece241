@@ -7,15 +7,15 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/D/Documents/School/ECE241/lab7/part2
+dC:/Users/D/Documents/SChool/ece241/lab7/part2
 vcontrol
-Z1 !s110 1669056667
+Z0 !s110 1669178599
 !i10b 1
-!s100 @7>R?ZTGcgUQD<H0A7kdX2
-I?>Kc=ngE@M=Tc6hLo4EZ:0
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-R0
-Z3 w1669056663
+!s100 QB;Pzb2o6Xm59T7h>8VSn2
+In3gIBkZ==2eMGX67elKAg2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/D/Documents/School/ECE241/lab7/part2
+Z3 w1669178574
 Z4 8part2.v
 Z5 Fpart2.v
 L0 77
@@ -23,22 +23,22 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1669056667.000000
+Z7 !s108 1669178599.000000
 Z8 !s107 part2.v|
 Z9 !s90 -reportprogress|300|part2.v|
 !i113 1
 Z10 tCvgOpt 0
 vdatapath
-R1
-!i10b 1
-!s100 Aj>[c2S[HjVOHcVm_OlXS3
-Id<5GYi6z@zWfc_3zSCl8j0
-R2
 R0
+!i10b 1
+!s100 l;fV^b<R4SCV;DQj05L[21
+IdNRg3HMIcffM7On_<BNJN2
+R1
+R2
 R3
 R4
 R5
-L0 208
+L0 212
 R6
 r1
 !s85 0
@@ -49,12 +49,12 @@ R9
 !i113 1
 R10
 vpart2
-R1
-!i10b 1
-!s100 PmYZ:OF]Q56;aD9ZTCLVS2
-I6`i_LFi24VmY?LKR=Zn?[1
-R2
 R0
+!i10b 1
+!s100 KeOY5ce]Wm`F8j@fSDhBC1
+IU614co:aJ?hIm<S[ONRUE0
+R1
+R2
 R3
 R4
 R5

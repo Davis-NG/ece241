@@ -6,8 +6,8 @@
 //
 
 module part2(iResetn, iPlotBox, iBlack, iColour, iLoadX, iXY_Coord, iClock, oX, oY, oColour, oPlot, oDone);
-   parameter X_SCREEN_PIXELS = 8'd8;
-   parameter Y_SCREEN_PIXELS = 7'd5;
+   parameter X_SCREEN_PIXELS = 8'd160;
+   parameter Y_SCREEN_PIXELS = 7'd120;
 
    input wire iResetn, iPlotBox, iBlack, iLoadX;
    input wire [2:0] iColour;
@@ -28,7 +28,7 @@ module part2(iResetn, iPlotBox, iBlack, iColour, iLoadX, iXY_Coord, iClock, oX, 
     wire [7:0] x_count;
     wire [6:0] y_count;
 
-    control #(.X_SCREEN_PIXELS(X_SCREEN_PIXELS), .Y_SCREEN_PIXELS(Y_SCREEN_PIXELS)) C0(
+    control C0(
         .clk(iClock),
         .resetn(iResetn),
 
@@ -74,8 +74,7 @@ module part2(iResetn, iPlotBox, iBlack, iColour, iLoadX, iXY_Coord, iClock, oX, 
 
 endmodule // part2
 
-module control #(parameter X_SCREEN_PIXELS = 8'd160,
-    parameter Y_SCREEN_PIXELS = 7'd120) (
+module control(
     input clk,
     input resetn,
 
@@ -129,12 +128,12 @@ module control #(parameter X_SCREEN_PIXELS = 8'd160,
                                         next_state = S_DRAW;
                 end
                 
-                S_DRAW_BLACK: begin if (x_count == X_SCREEN_PIXELS-1'b1)
+                S_DRAW_BLACK: begin if (x_count == 8'd131)
                                         next_state = S_INCREMENT_BL;
                                     else 
                                         next_state = S_DRAW_BLACK;
                 end 
-                S_INCREMENT_BL: begin if (y_count == Y_SCREEN_PIXELS-1'b1)
+                S_INCREMENT_BL: begin if (y_count == 7'd119)
                                         next_state = S_DONE;
                                       else
                                         next_state = S_DRAW_BLACK;
@@ -275,7 +274,7 @@ module datapath(
             1'b1: begin
                 outX = x_count;
                 outY= y_count;
-                outColo = 3'b000;
+                outColo = x_count[2:0] + y_count[2:0];
             end
             default: begin
                 outX = 8'b0;
