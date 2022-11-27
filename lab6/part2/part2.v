@@ -60,7 +60,6 @@ module part2(Clock, Resetn, Go, DataIn, DataResult, ResultValid);
 
 endmodule
 
-
 module control(
     input clk,
     input resetn,

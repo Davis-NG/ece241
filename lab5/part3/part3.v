@@ -65,14 +65,6 @@ module RateDivider_500Hz(ClockIn, Reset, Enable);
         if (Reset == 1'b0)
             Divider <= 11'd0;
         else if (Divider == 11'b000_0000_0000)
-            //Divider <= d;
-            //case(Speed)                     // load counter to: (clock speed)/(desired speed) - 1
-            //    2'b00: Divider = 11'd0;     // load to 500Hz/500Hz - 1
-            //    2'b01: Divider = 11'd499;   // load to 500Hz/1Hz - 1
-            //    2'b10: Divider = 11'd999;   // load to 500Hz/0.5Hz - 1
-            //    2'b11: Divider = 11'd1999;  // load to 500Hz/0.25Hz - 1
-            //    default Divider = 11'd0;
-            //endcase
             Divider <= 11'd259;   // load to 500Hz/2Hz - 1
         else 
             Divider <= Divider - 1;  // count down to zero
@@ -105,7 +97,7 @@ module TopG(CLOCK_50, SW, KEY, LEDR);
 endmodule
 
 // adjustable clock divider
-module RateDivider_50MHz(ClockIn, Reset, Speed, Enable);
+module RateDivider_50MHz(ClockIn, Reset, Enable);
     input ClockIn, Reset; 
     input [1:0] Speed;
     output Enable;
@@ -117,14 +109,6 @@ module RateDivider_50MHz(ClockIn, Reset, Speed, Enable);
         if (Reset == 1'b0)
             Divider <= 28'd0;
         else if (Divider == 28'd0) 
-            //Divider <= d;
-            //case(Speed)                     // load counter to: (clock speed)/(desired speed) - 1
-            //    2'b00: Divider = 28'd0;             // load to 50MHz/50MHz - 1
-            //    2'b01: Divider = 28'd50_000_000;    // load to 50MHz/1Hz - 1
-            //    2'b10: Divider = 28'd99_999_999;    // load to 50MHz/0.5Hz - 1
-            //    2'b11: Divider = 28'd199_999_999;   // load to 50MHz/0.25Hz - 1
-            //    default Divider = 28'd0;
-            //endcase
             Divider <= 28'd24_999_999;    // load to 50MHz/2Hz - 1
             // Divider <= 
         else 

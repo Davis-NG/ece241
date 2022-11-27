@@ -20,7 +20,7 @@ module TopG(SW, LEDR, KEY, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5);
     output [7:0] LEDR;
     wire [7:0] ALU;
 
-    part2(.Clock(~KEY[0]), .Reset_b(SW[9]), .Data(SW[3:0]), .Function(~KEY[3:1]), .ALUout(ALU));
+    part2 u0(.Clock(~KEY[0]), .Reset_b(SW[9]), .Data(SW[3:0]), .Function(~KEY[3:1]), .ALUout(ALU));
 
     assign LEDR = ALU; // display ALUout on LEDs
 
@@ -57,7 +57,7 @@ module ALU(A, B, Function, ALUout);
     output reg [7:0] ALUout;
     wire [3:0] sum, carry, connect;
 
-    RCD_4bit a0(.a(A), .b(B[3:0]), .c_in(0), .s(sum), .c_out(carry));
+    RCD_4bit a0(.a(A), .b(B[3:0]), .c_in(1'b0), .s(sum), .c_out(carry));
 
     always @(*)
         case (Function)

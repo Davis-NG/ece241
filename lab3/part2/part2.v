@@ -17,7 +17,7 @@ module full_adder(a, b, c_i, s, c_o);
     input a, b, c_i;
     output c_o, s;
 
-   wire sel;
+    wire sel;
 
     assign sel = a^b;
     assign s = sel^c_i;

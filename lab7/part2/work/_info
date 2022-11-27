@@ -9,13 +9,13 @@ z2
 cModel Technology
 dC:/Users/D/Documents/SChool/ece241/lab7/part2
 vcontrol
-Z0 !s110 1669178599
+Z0 !s110 1669582741
 !i10b 1
-!s100 QB;Pzb2o6Xm59T7h>8VSn2
-In3gIBkZ==2eMGX67elKAg2
+!s100 `A5V2zP[k6z:O?515_hfU0
+IniJV7J@24:[m3I4IdHTmc1
 Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dC:/Users/D/Documents/School/ECE241/lab7/part2
-Z3 w1669178574
+Z2 dC:/Users/D/Documents/school/ece241/lab7/part2
+Z3 w1669527223
 Z4 8part2.v
 Z5 Fpart2.v
 L0 77
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1669178599.000000
+Z7 !s108 1669582741.000000
 Z8 !s107 part2.v|
 Z9 !s90 -reportprogress|300|part2.v|
 !i113 1
@@ -31,14 +31,14 @@ Z10 tCvgOpt 0
 vdatapath
 R0
 !i10b 1
-!s100 l;fV^b<R4SCV;DQj05L[21
-IdNRg3HMIcffM7On_<BNJN2
+!s100 ]8gDjP;_Y0mJO3AOEH`k_3
+INO?11C0V5z?b9AO5GEV4V2
 R1
 R2
 R3
 R4
 R5
-L0 212
+L0 213
 R6
 r1
 !s85 0

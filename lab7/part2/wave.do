@@ -3,7 +3,7 @@ vlog part2.v
 vsim part2
 log -r /*
 # add wave {/*} would add all items in top level simulation module
-do setting1.do
+do setting.do
 
 #create clock
 force {iClock} 0 0ns, 1 {5ns} -r 10ns

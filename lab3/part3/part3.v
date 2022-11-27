@@ -7,7 +7,7 @@ module part3(A, B, Function, ALUout);
     output reg [7:0] ALUout;
     wire [3:0] sum, carry;
 
-    part2 a0(.a(A), .b(B), .c_in(0), .s(sum), .c_out(carry));
+    part2 a0(.a(A), .b(B), .c_in(1'b0), .s(sum), .c_out(carry));
 
     always @(*)
         case (Function)
@@ -90,5 +90,4 @@ module mux2to1(x, y, s, m);
     //assign m = s & y | ~s & x;
     // OR
     assign m = s ? y : x;
-
 endmodule

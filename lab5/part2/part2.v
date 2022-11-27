@@ -17,18 +17,6 @@ module RateDivider_500Hz(ClockIn, Reset, Speed, Enable);
     output Enable;
     
     reg [10:0] Divider;
-    //reg [10:0] d;
-
-    //always @(*)
-    //begin
-    //    case(Speed)
-    //        2'b00: d = 11'd1;
-    //        2'b01: d = 11'd499;
-    //        2'b10: d = 11'd999;
-    //        2'b11: d = 11'd1999;
-    //        default: d = 11'b0;
-    //    endcase
-    //end
 
     always @(posedge ClockIn)
     begin
@@ -101,7 +89,7 @@ module topG(SW, HEX0, CLOCK_50);
     RateDivider_50MHz r0(.ClockIn(CLOCK_50), .Reset(SW[9]), .Enable(enable), .Speed(SW[1:0]));
     DisplayCounter c1(.ClockIn(CLOCK_50), .Reset(SW[9]), .EnableDC(enable), .q(CounterValue));
     // display CounterValue on 7 seg display
-    hex_decoder(.c(CounterValue), .display(HEX0)); 
+    hex_decoder h0(.c(CounterValue), .display(HEX0)); 
 endmodule
 
 // adjustable clock divider

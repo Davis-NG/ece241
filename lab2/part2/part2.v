@@ -41,7 +41,7 @@ module mux2to1(x, y, s, m);
 	
 	wire w1, w2, w3;
 	
-	v7404 u1(.pin1 (s), .pin2 (w1));
-	v7408 u2(.pin1 (w1), .pin2 (x), .pin3 (w2), .pin4 (s), .pin5 (y), .pin6 (w3));
-	v7432 u3(.pin1 (w2), .pin2 (w3), .pin3 (m));
+	v7404 u1(.pin1(s), .pin2(w1));
+	v7408 u2(.pin1(w1), .pin2(x), .pin3(w2), .pin4(s), .pin5(y), .pin6(w3));
+	v7432 u3(.pin1(w2), .pin2(w3), .pin3(m));
 endmodule

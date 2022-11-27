@@ -118,7 +118,7 @@ module control #(parameter X_SCREEN_PIXELS = 8'd160,
                 S_LOAD_Y: next_state = plotBox ? S_LOAD_Y_WAIT : S_LOAD_Y; // Loop in current state until value is input
                 S_LOAD_Y_WAIT: next_state = plotBox ? S_LOAD_Y_WAIT : S_DRAW; // Loop in current state until plotBox signal goes low
 
-                S_DRAW: begin if (x_count == 8'd3)
+                S_DRAW: begin if (x_count == 8'd2)
                                 next_state = S_INCREMENT_Y;
                               else
                                 next_state = S_DRAW;
@@ -144,7 +144,7 @@ module control #(parameter X_SCREEN_PIXELS = 8'd160,
                                     next_state = S_LOAD_X_WAIT;
                                 else if (black)
                                     next_state = S_BLACK_WAIT;
-                                else
+                                else    
                                     next_state = S_DONE;
                 end 
 
@@ -181,6 +181,7 @@ module control #(parameter X_SCREEN_PIXELS = 8'd160,
             end
             S_INCREMENT_Y: begin
                 y_count_en = 1'b1;
+                plot = 1'b1;
             end
             S_DRAW_BLACK: begin
                 x_count_en = 1'b1;
@@ -284,6 +285,4 @@ module datapath(
             end
         endcase
     end
-
 endmodule
-

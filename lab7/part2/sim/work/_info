@@ -1,0 +1,200 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/D/Documents/School/ECE241/lab7/part2/sim
+vcontrol
+Z1 !s110 1669491887
+!i10b 1
+!s100 QB;Pzb2o6Xm59T7h>8VSn2
+IV@D?VB3CAC9^S_a3]S==J2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1669438192
+Z4 8../part2.v
+Z5 F../part2.v
+L0 77
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1669491887.000000
+Z8 !s107 ../vga_pll.v|../vga_controller.v|../vga_address_translator.v|../vga_adapter.v|../Top.v|../part2.v|
+Z9 !s90 -nolock|../part2.v|../Top.v|../vga_adapter.v|../vga_address_translator.v|../vga_controller.v|../vga_pll.v|
+!i113 1
+Z10 o-nolock
+Z11 tCvgOpt 0
+vdatapath
+R1
+!i10b 1
+!s100 f0V8A:;FGXonA7IzVnJ[[0
+IEAozKKbl@fkmSO]k;[M3F0
+R2
+R0
+R3
+R4
+R5
+L0 212
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vpart2
+R1
+!i10b 1
+!s100 KeOY5ce]Wm`F8j@fSDhBC1
+I_GS3_1izkSId=?8mT^K?W0
+R2
+R0
+R3
+R4
+R5
+L0 8
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vtb
+R1
+!i10b 1
+!s100 [5LzDTNkDFC>_>oNoz<[31
+IE1K[liGATPRNgBiDVLTVL3
+R2
+R0
+w1648393182
+8../tb/tb.v
+F../tb/tb.v
+L0 9
+R6
+r1
+!s85 0
+31
+R7
+!s107 ../tb/tb.v|
+!s90 -nolock|../tb/tb.v|
+!i113 1
+R10
+R11
+vTop
+R1
+!i10b 1
+!s100 mhd;cP;37hYl=]CcTVQmi0
+I`zCjelSKnV9^^Z]z?<Mib0
+R2
+R0
+w1669002009
+8../Top.v
+F../Top.v
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@top
+vvga_adapter
+R1
+!i10b 1
+!s100 2<V7moDJcN?;XAS210;_c1
+I1i7Y;K<_2TP7NRQTBYYEW0
+R2
+R0
+w1510249846
+8../vga_adapter.v
+F../vga_adapter.v
+L0 78
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vvga_address_translator
+R1
+!i10b 1
+!s100 C0DfW0_9[5co`@boeR]Pi1
+I^[KA3IAg;WMiSDM2?XOz_0
+R2
+R0
+Z12 w1224526160
+8../vga_address_translator.v
+F../vga_address_translator.v
+L0 4
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vvga_controller
+R1
+!i10b 1
+!s100 e6ZP6iRSUQ77>][ahP0EJ1
+IDUPJ^Y2]G<RgY35k=mEMf2
+R2
+R0
+R12
+8../vga_controller.v
+F../vga_controller.v
+L0 9
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vvga_pll
+R1
+!i10b 1
+!s100 4XSTjD`VEiamX^n1@5J`b3
+If@g_GK_HOj^c=ckP1Y]Wo2
+R2
+R0
+R12
+8../vga_pll.v
+F../vga_pll.v
+L0 36
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
