@@ -67,7 +67,7 @@ module fill
 			
 	// Put your code here. Your code should produce signals x,y,colour and writeEn
 	// for the VGA controller, in addition to any other functionality your design may require.
-	part2 #(.CLOCKS_PER_SECOND(50000000)) u0(
+	part1 #(.CLOCKS_PER_SECOND(50000000)) u0(
 		.iClock(CLOCK_50),
 		.iResetn(resetn),
 		.iColour(SW[9:7]),

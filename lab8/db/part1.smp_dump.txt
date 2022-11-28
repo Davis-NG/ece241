@@ -1,0 +1,9 @@
+
+State Machine - |fill|part1:u0|control:C0|current_state
+Name current_state.S_COUNT current_state.S_ERASE_Y current_state.S_ERASE current_state.S_WAIT current_state.S_INCREMENT_Y current_state.S_DRAW 
+current_state.S_DRAW 0 0 0 0 0 0 
+current_state.S_INCREMENT_Y 0 0 0 0 1 1 
+current_state.S_WAIT 0 0 0 1 0 1 
+current_state.S_ERASE 0 0 1 0 0 1 
+current_state.S_ERASE_Y 0 1 0 0 0 1 
+current_state.S_COUNT 1 0 0 0 0 1 

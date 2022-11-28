@@ -327,9 +327,10 @@ module datapath(
                 y_count <= 7'b0;
     end
 
-    // The output multiplexers
+    // The outputs
     always @(*)
     begin
+        // Mux for colour
         case (clear)
             1'b0: outColo = colour;
             1'b1: outColo = 3'b000;
