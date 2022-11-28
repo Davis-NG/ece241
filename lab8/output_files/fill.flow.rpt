@@ -1,5 +1,5 @@
 Flow report for fill
-Sun Nov 27 18:59:29 2022
+Sun Nov 27 19:10:45 2022
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sun Nov 27 18:59:23 2022       ;
+; Flow Status                     ; Successful - Sun Nov 27 19:10:39 2022       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; fill                                        ;
 ; Top-level Entity Name           ; fill                                        ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/27/2022 18:58:35 ;
+; Start date & time ; 11/27/2022 19:09:59 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; fill                ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 10995770589192.166959351517364         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 10995770589192.166959419914600         ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -91,11 +91,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4842 MB             ; 00:00:17                           ;
-; Fitter               ; 00:00:29     ; 1.0                     ; 6627 MB             ; 00:00:54                           ;
-; Assembler            ; 00:00:07     ; 1.0                     ; 4828 MB             ; 00:00:05                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.1                     ; 5182 MB             ; 00:00:05                           ;
-; Total                ; 00:00:49     ; --                      ; --                  ; 00:01:21                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4838 MB             ; 00:00:17                           ;
+; Fitter               ; 00:00:24     ; 1.0                     ; 6630 MB             ; 00:00:46                           ;
+; Assembler            ; 00:00:05     ; 1.0                     ; 4831 MB             ; 00:00:05                           ;
+; Timing Analyzer      ; 00:00:05     ; 1.1                     ; 5180 MB             ; 00:00:05                           ;
+; Total                ; 00:00:43     ; --                      ; --                  ; 00:01:13                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
