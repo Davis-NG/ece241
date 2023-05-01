@@ -7,39 +7,61 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/D/Documents/School/ECE241/lab7/part2/sim
+Z0 dC:/Users/D/Documents/School/ECE241/lab8/sim
 vcontrol
-Z1 !s110 1672611807
+Z1 !s110 1672613037
 !i10b 1
-!s100 `A5V2zP[k6z:O?515_hfU0
-Ii14SHII8F7f^IDZ5_goi:0
+!s100 X[kDPjG4ZZZgOd^nWl]TB3
+IFAhKgz5VlWYEiJ_m8WA870
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z3 w1669527223
-Z4 8../part2.v
-Z5 F../part2.v
-L0 77
+Z3 w1669770944
+Z4 8../part1.v
+Z5 F../part1.v
+L0 193
 Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1672611807.000000
-Z8 !s107 ../vga_pll.v|../vga_controller.v|../vga_address_translator.v|../vga_adapter.v|../Top.v|../part2.v|
-Z9 !s90 -nolock|../part2.v|../Top.v|../vga_adapter.v|../vga_address_translator.v|../vga_controller.v|../vga_pll.v|
+Z7 !s108 1672613037.000000
+Z8 !s107 ../vga_pll.v|../vga_controller.v|../vga_address_translator.v|../vga_adapter.v|../Top.v|../part1.v|
+Z9 !s90 -nolock|../part1.v|../Top.v|../vga_adapter.v|../vga_address_translator.v|../vga_controller.v|../vga_pll.v|
 !i113 1
 Z10 o-nolock
 Z11 tCvgOpt 0
+vCounter
+R1
+!i10b 1
+!s100 Q:Ta`18dXWFE41NV@7P:G2
+I;;L6f_GHTogmGISoCYjQF1
+R2
+R0
+R3
+R4
+R5
+L0 136
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@counter
 vdatapath
 R1
 !i10b 1
-!s100 ]8gDjP;_Y0mJO3AOEH`k_3
-IAPfeVb>;9fD_J2dk@a_7X0
+!s100 SYz=iD=f4HD]^N:Ij7d5_2
+IXinRb_XVm?7GOW;kR@d682
 R2
 R0
 R3
 R4
 R5
-L0 213
+L0 297
 R6
 r1
 !s85 0
@@ -50,17 +72,17 @@ R9
 !i113 1
 R10
 R11
-vpart2
+vpart1
 R1
 !i10b 1
-!s100 KeOY5ce]Wm`F8j@fSDhBC1
-I_GS3_1izkSId=?8mT^K?W0
+!s100 T^az^b?9^TVSC@TL]W];<1
+I=g>IIOILXf]:DS4LRW18Y0
 R2
 R0
 R3
 R4
 R5
-L0 8
+L0 20
 R6
 r1
 !s85 0
@@ -71,6 +93,28 @@ R9
 !i113 1
 R10
 R11
+vRateDivider
+R1
+!i10b 1
+!s100 TR;^amS;c7m0cV`]QhG`10
+Ik?;PgCe4C6PUR6^0n3VI;0
+R2
+R0
+R3
+R4
+R5
+L0 105
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@rate@divider
 vtb
 R1
 !i10b 1
@@ -95,11 +139,11 @@ R11
 vTop
 R1
 !i10b 1
-!s100 mhd;cP;37hYl=]CcTVQmi0
-I`zCjelSKnV9^^Z]z?<Mib0
+!s100 =?45=XniXPfaP>hjJ1FP80
+IP=LV519kf?kIdhH><=P1e1
 R2
 R0
-w1669002009
+w1669743352
 8../Top.v
 F../Top.v
 L0 3
@@ -117,8 +161,8 @@ n@top
 vvga_adapter
 R1
 !i10b 1
-!s100 2<V7moDJcN?;XAS210;_c1
-I1i7Y;K<_2TP7NRQTBYYEW0
+!s100 Y2HEIVRlH6`=V[L462YW^2
+IkhR4M`RN[Hl`DMEjfZV[X1
 R2
 R0
 w1510249846
@@ -138,8 +182,8 @@ R11
 vvga_address_translator
 R1
 !i10b 1
-!s100 C0DfW0_9[5co`@boeR]Pi1
-I^[KA3IAg;WMiSDM2?XOz_0
+!s100 8Xf>adRUSbD5BJ7^m__cW0
+IlfW;[BaPEAk=<Kc<U8L]<2
 R2
 R0
 Z12 w1224526160
@@ -159,8 +203,8 @@ R11
 vvga_controller
 R1
 !i10b 1
-!s100 e6ZP6iRSUQ77>][ahP0EJ1
-IDUPJ^Y2]G<RgY35k=mEMf2
+!s100 FR9Dkd:>N58SHI[SV@M_H1
+IK7X]R?VbH0CWP:ESW59<l1
 R2
 R0
 R12

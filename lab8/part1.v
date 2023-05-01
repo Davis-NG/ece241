@@ -29,9 +29,9 @@ module part1(iColour, iResetn, iClock, oX, oY, oColour, oPlot, oNewFrame);
    output wire       oNewFrame;    // goes high for 1 cycle when a new frame starts
 
    parameter
-     X_SCREEN_PIXELS = 160,  // X screen width for starting resolution
-     Y_SCREEN_PIXELS = 120,  // Y screen height for starting resolution
-     CLOCKS_PER_SECOND = 1200, // 5 KHZ 
+     X_SCREEN_PIXELS = 9,  // X screen width for starting resolution
+     Y_SCREEN_PIXELS = 7,  // Y screen height for starting resolution
+     CLOCKS_PER_SECOND = 1200, // 1200 HZ 
      X_BOXSIZE = 8'd4,   // Box X dimension
      Y_BOXSIZE = 7'd4,   // Box Y dimension
      X_MAX = X_SCREEN_PIXELS - 1 - X_BOXSIZE, // 0-based and account for box width
@@ -178,12 +178,12 @@ module Counter #(parameter X_MAX = 160 - 4 - 1, Y_MAX = 120 - 4 - 1)(
         else begin
             if (x_init == 8'd1)
                 DirX <= RIGHT;
-            else if (x_init == X_MAX)
+            else if (x_init == X_MAX + 1'b1)
                 DirX <= LEFT;
             
             if (y_init == 8'd1)
                 DirY <= DOWN;
-            else if (y_init == Y_MAX) 
+            else if (y_init == Y_MAX + 1'b1) 
                 DirY <= UP;
         end
     end
@@ -227,7 +227,7 @@ module control(
                 else 
                     next_state = S_DRAW;
             end
-            S_WAIT: next_state = FrameCounter == 4'd15 ? S_ERASE : S_WAIT;
+            S_WAIT: next_state = FrameCounter == 4'd14 ? S_ERASE : S_WAIT;
             S_ERASE: begin 
                 if (x_count == 8'd2)
                     next_state = S_ERASE_Y;

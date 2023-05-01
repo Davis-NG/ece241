@@ -1,2 +1,0 @@
-Warning (10268): Verilog HDL information at part2.v(33): always construct contains both blocking and non-blocking assignments File: /nfs/ug/homes-1/n/ngresida/ece241/lab5/part2/part2.v Line: 33
-Warning (10268): Verilog HDL information at part2.v(106): always construct contains both blocking and non-blocking assignments File: /nfs/ug/homes-1/n/ngresida/ece241/lab5/part2/part2.v Line: 106

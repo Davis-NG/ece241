@@ -1,5 +1,5 @@
-# vsim -pli "simfpga.vpi" -Lf 220model -Lf altera_mf_ver -Lf verilog -c -do "run -all" tb 
-# Start time: 17:23:32 on Jan 01,2023
+# vsim -pli "simfpga.vpi" -L 220model -L altera_mf_ver -L verilog -c -do "run -all" tb 
+# Start time: 17:47:18 on Jan 01,2023
 # Loading work.tb
 # Loading work.Top
 # Loading work.vga_adapter
@@ -10,7 +10,9 @@
 # Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
 # Loading altera_mf_ver.pll_iobuf
 # Loading work.vga_controller
-# Loading work.part2
+# Loading work.part1
+# Loading work.RateDivider
+# Loading work.Counter
 # Loading work.control
 # Loading work.datapath
 # ** Error (suppressible): (vsim-10000) ../vga_adapter.v(215): Unresolved defparam reference to 'WIDTH_A' in VideoMemory.WIDTH_A.
@@ -44,5 +46,5 @@
 # ** Error (suppressible): (vsim-10000) ../vga_adapter.v(229): Unresolved defparam reference to 'INIT_FILE' in VideoMemory.INIT_FILE.
 #    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/VGA File: ../vga_adapter.v
 # Error loading design
-# End time: 17:23:32 on Jan 01,2023, Elapsed time: 0:00:00
+# End time: 17:47:18 on Jan 01,2023, Elapsed time: 0:00:00
 # Errors: 15, Warnings: 0

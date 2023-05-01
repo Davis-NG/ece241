@@ -9,25 +9,25 @@ z2
 cModel Technology
 Z0 dC:/Users/D/Documents/School/ECE241/lab8
 vcontrol
-Z1 !s110 1669592727
+Z1 !s110 1673209404
 !i10b 1
-!s100 e^oJ1gH?@M;UNT5UfMV4X1
-IjXaI^@8K0WdZaThoI2elj2
+!s100 X[kDPjG4ZZZgOd^nWl]TB3
+Ik:I_c3OmiOND_WF<`03Y60
 Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 dC:/Users/D/Documents/School/ece241/lab8
-Z4 w1669592724
-Z5 8part1.v
-Z6 Fpart1.v
+R0
+Z3 w1669770944
+Z4 8part1.v
+Z5 Fpart1.v
 L0 193
-Z7 OV;L;10.5b;63
+Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z8 !s108 1669592727.000000
-Z9 !s107 part1.v|
-Z10 !s90 -reportprogress|300|part1.v|
+Z7 !s108 1673209404.000000
+Z8 !s107 part1.v|
+Z9 !s90 -reportprogress|300|part1.v|
 !i113 1
-Z11 tCvgOpt 0
+Z10 tCvgOpt 0
 vcontrolTop
 !s110 1669586466
 !i10b 1
@@ -36,98 +36,98 @@ I^8dPSnUCOBe=PQP5ZmXG71
 R2
 R0
 w1669586461
+R4
 R5
-R6
 L0 184
-R7
+R6
 r1
 !s85 0
 31
 !s108 1669586466.000000
+R8
 R9
-R10
 !i113 1
-R11
+R10
 ncontrol@top
 vCounter
 R1
 !i10b 1
-!s100 A<9Z1QTjWOSW_Ngm:::0c0
-IcMlTNRB>]lE@Vk?_[0=@d0
+!s100 Q:Ta`18dXWFE41NV@7P:G2
+II=8nHGKzk^B>Yd0iRfQkn1
 R2
+R0
 R3
 R4
 R5
-R6
 L0 136
-R7
+R6
 r1
 !s85 0
 31
+R7
 R8
 R9
-R10
 !i113 1
-R11
+R10
 n@counter
 vdatapath
 R1
 !i10b 1
-!s100 bkaVoSe5bnR`Q:Vc_Zg_?3
-IbOCe6:8BMm`o2DOPAlZjL1
+!s100 SYz=iD=f4HD]^N:Ij7d5_2
+IDRZQQ`_cK??Y<bbh@:=<j2
 R2
+R0
 R3
 R4
 R5
-R6
 L0 297
-R7
+R6
 r1
 !s85 0
 31
+R7
 R8
 R9
-R10
 !i113 1
-R11
+R10
 vpart1
 R1
 !i10b 1
-!s100 M`h<NcTgZ3oG0ohQ_GH_R2
-I4=bA^BdCKPI9DnnI=nSNL0
+!s100 T^az^b?9^TVSC@TL]W];<1
+I2mzXhS=57AM^U[oocjIQ:1
 R2
+R0
 R3
 R4
 R5
-R6
 L0 20
-R7
+R6
 r1
 !s85 0
 31
+R7
 R8
 R9
-R10
 !i113 1
-R11
+R10
 vRateDivider
 R1
 !i10b 1
 !s100 TR;^amS;c7m0cV`]QhG`10
 I?Yd_e_BCFnQ;@mB<PfMig3
 R2
+R0
 R3
 R4
 R5
-R6
 L0 105
-R7
+R6
 r1
 !s85 0
 31
+R7
 R8
 R9
-R10
 !i113 1
-R11
+R10
 n@rate@divider

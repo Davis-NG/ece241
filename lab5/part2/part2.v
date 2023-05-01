@@ -18,8 +18,7 @@ module RateDivider_500Hz(ClockIn, Reset, Speed, Enable);
     
     reg [10:0] Divider;
 
-    always @(posedge ClockIn)
-    begin
+    always @(posedge ClockIn) begin
         if (Reset == 1'b1)
             Divider <= 11'd0;
         else if (Divider == 11'b000_0000_0000)
